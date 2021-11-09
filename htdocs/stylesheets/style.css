@@ -6,6 +6,11 @@ img {
  object-fit: cover; /* 画像を中央で綺麗にトリミングする記述 */
 }
 
+a {
+ text-decoration: none;
+ color: inherit;
+}
+
 .header {
  background-color: bisque;
  height: 100px;
@@ -98,4 +103,59 @@ li {
 .footer-content {
  text-align: center;
  padding-top: 20px;
+}
+
+.sp-menu {
+ margin:0 0 0 auto;
+}
+
+.sp-menu #open {
+ font-size: 40px;
+ line-height: 64px;
+ cursor: pointer;  /* 指定した場所でカーソルの形を変形させる */
+}
+
+.sp-menu #close {
+ font-size: 40px;
+ cursor: pointer;  /* 指定した場所でカーソルの形を変形させる */
+ 
+}
+
+.sp-menu #open.hide {
+ display: none;
+}
+
+.overlay {
+ height: 100%;
+ text-align: center;
+ padding: 64px;
+ opacity: 0;
+ pointer-events: none;
+ transition: opacity .6s;  /* menu close時のアニメーション設定 */
+ background:  rgba(125, 125, 125, 0.95);}
+
+.overlay.show {
+  opacity: 1; 
+  pointer-events: auto; /* クリックした後カーソル変化させる為の記述 */
+
+}
+
+.overlay #close {
+ top: 16px;
+ left: 16px;
+ font-size: 32px;
+ cursor: pointer;
+}
+
+.overlay ul {
+ list-style: none;
+}
+
+.overlay li {
+ margin-top: 50px; 
+}
+
+.overlay a {
+ color: white;
+ text-decoration: none;
 }

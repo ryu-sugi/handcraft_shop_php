@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet"> <!-- google font -->
   <link rel="stylesheet" type="text/css" href="../stylesheets/html5reset-1.6.1.css">
   <title>Hand Craft Shop</title>
 </head>
@@ -14,20 +14,30 @@
 <div id="container">
   <header class="header">
     <div class="heading">
-        <h1>Hand Craft Shop</h1>
+      <h1>Hand Craft Shop</h1>
     </div>
     <div class="navbar">
-        <a href="item.php" class="search">アイテムを探す</a>
-        <a href="login.php" class="login">ログイン</a>
-        <a href="cart.php" class="cart">カート</a>
-          <ul class="nav-list"> リスト
+      <a href="item.php" class="search">アイテムを探す</a>
+      <a href="login.php" class="login">ログイン</a>
+      <a href="cart.php" class="cart">カート</a>
+    </div>
+    <div class="sp-menu">
+      <!-- Webフォントから取り出したアイコン -->
+      <span class="material-icons" id="open">menu</span>
+      <div class="overlay">
+        <span class="material-icons" id="close">close</span>
+        <nav class="hamburger-nav">
+          <ul class="nav-list">
             <li><a href="news.php">お知らせ</a></li>
             <li><a href="comp.php">会社概要</a></li>
             <li><a href="info.php">お問合せ</a></li>
           </ul>
-    </div>
-  </header>
+        </nav>
+      </div>
+      </div>
+    </header>
 
+    
   <div class="main-content">
     <div class="first-content">
       <div class="first-view">
@@ -52,7 +62,6 @@
       </div>
     </div>
 
-
     </div>
     <div class="second-content">
     <!-- 商品画像を表示する -->
@@ -65,6 +74,6 @@
     </div>
   </div>
   </div>
-<script type="text/javascript" src="../js/shop.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
