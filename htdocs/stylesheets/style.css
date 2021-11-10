@@ -113,6 +113,7 @@ li {
  font-size: 40px;
  line-height: 64px;
  cursor: pointer;  /* 指定した場所でカーソルの形を変形させる */
+ padding-top: 20px;
 }
 
 .sp-menu #close {

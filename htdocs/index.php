@@ -14,7 +14,7 @@
 <div id="container">
   <header class="header">
     <div class="heading">
-      <h1>Hand Craft Shop</h1>
+     <a href="index.php"> <h1>Hand Craft Shop</h1> </a>
     </div>
     <div class="navbar">
       <a href="item.php" class="search">アイテムを探す</a>
@@ -61,12 +61,7 @@
         ¥1000
       </div>
     </div>
-
-    </div>
-    <div class="second-content">
-    <!-- 商品画像を表示する -->
-    </div>
-  </div>
+    <br> <br> <br> <br>
 
   <div id="footer">
     <div class="footer-content">
