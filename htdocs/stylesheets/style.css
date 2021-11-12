@@ -38,6 +38,10 @@ img {
 
 }
 
+.add_item {
+padding: 20px;
+}
+
 .search {
  padding-top: 20px;
 }
