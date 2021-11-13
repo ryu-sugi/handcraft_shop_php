@@ -1,8 +1,12 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
 <?php include('./parts/head.php'); ?> <!-- include関数でパーツの分割化 -->
+</head>
 
 <body>
-<?php include('./parts/header.php'); ?> <!-- include関数でパーツの分割化 -->
 
+<?php include('./parts/header.php'); ?> <!-- include関数でパーツの分割化 -->
 
   <div class="main-content">
     <div class="first-content">
@@ -28,7 +32,9 @@
         </div>
       </div>
       <br> <br> <br> <br>
-    <?php include('./parts/footer.php'); ?>
+
+    <?php include('./parts/footer.php'); ?> <!-- include関数でパーツの分割化 -->
+
   </div>
 <script type="text/javascript" src="../js/main.js"></script>
 </body>
