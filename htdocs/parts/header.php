@@ -18,6 +18,7 @@
          <li><a href="news.php">お知らせ</a></li>
          <li><a href="comp.php">会社概要</a></li>
          <li><a href="info.php">お問合せ</a></li>
+         <li><a href="produce.php">制作者情報</a></li>
        </ul>
      </nav>
    </div>
