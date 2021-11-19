@@ -3,7 +3,7 @@
   <a href="index.php"> <h1>Hand Craft Shop</h1> </a>
  </div>
  <div class="navbar">
- <a href="pro_add.php" class="add_item">出品</a>
+ <a href="product/pro_add.php" class="add_item">出品</a>
    <a href="item.php" class="search">アイテムを探す</a>
    <a href="login.php" class="login">ログイン</a>
    <a href="cart.php" class="cart">カート</a>

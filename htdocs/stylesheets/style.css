@@ -170,3 +170,10 @@ li {
  color: white;
  text-decoration: none;
 }
+
+/* pro_add.php */
+
+.pro_add {
+  text-align: center;
+  margin-top: 150px;
+}
