@@ -10,7 +10,7 @@
   
   <div class="pro_add">
   <br> 出品情報追加 <br>
-    <form method="post" action="pro_check.php" >
+    <form method="post" action="pro_add_check.php" >
       商品名を入力してください <br>
       <input type="text" name="name" style="width: 200px;"> <br> <br>
       価格を入力してください <br>
