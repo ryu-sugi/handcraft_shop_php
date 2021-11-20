@@ -12,12 +12,12 @@
   <br> 出品情報追加 <br>
     <form method="post" action="pro_add_check.php" >
       商品名を入力してください <br>
-      <input type="text" name="name" style="width: 200px;"> <br> <br>
+      <input type="text" name="pro_name" style="width: 200px;"> <br> <br>
       価格を入力してください <br>
-      <input type="text" name="price" style="width: 50px;"> <br> <br>
+      <input type="text" name="pro_price" style="width: 50px;"> <br> <br>
       カテゴリを選択してください <br> <br>
-      <select name='item-category' class="item-category">
-        <option >カテゴリー選択</option>
+      <select name='pro_category' class="category">
+        <option hidden>カテゴリー選択</option>
         <option value='item1' class="item1">アクセサリー</option>
         <option value='item2' class="item2">手芸</option>
         <option value='item3' class="item3">財布・小物</option>

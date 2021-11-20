@@ -1,6 +1,6 @@
 <header class="header">
  <div class="heading">
-  <a href="index.php"> <h1>Hand Craft Shop</h1> </a>
+  <a href="../index.php"> <h1>Hand Craft Shop</h1> </a>
  </div>
  <div class="navbar">
  <a href="product/pro_add.php" class="add_item">出品</a>
