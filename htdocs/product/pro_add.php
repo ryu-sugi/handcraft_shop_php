@@ -17,12 +17,12 @@
       <input type="text" name="pro_price" style="width: 50px;"> <br> <br>
       カテゴリを選択してください <br> <br>
       <select name='pro_category' class="category">
-        <option hidden>カテゴリー選択</option>
-        <option value='item1' class="item1">アクセサリー</option>
-        <option value='item2' class="item2">手芸</option>
-        <option value='item3' class="item3">財布・小物</option>
-        <option value='item4' class="item4">イラスト・絵画</option>
-        <option value='item3' class="item5">その他</option>
+        <option value='カテゴリー選択'>カテゴリー選択</option>
+        <option value='アクセサリー' class="item1">アクセサリー</option>
+        <option value='手芸' class="item2">手芸</option>
+        <option value='財布' class="item3">財布・小物</option>
+        <option value='イラスト・絵画' class="item4">イラスト・絵画</option>
+        <option value='その他' class="item5">その他</option>
       </select> <br> <br>
       <input type="button" onclick="history.back" value="戻る">
       <input type="submit" value="OK">

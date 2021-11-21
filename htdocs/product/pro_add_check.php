@@ -40,13 +40,13 @@
    print '<br>';
   }
 
-  if($pro_category==)
+  if($pro_category== 'カテゴリー選択')
   {
    print 'カテゴリーを選択してください <br>';
   }
   else
   {
-   print 'カテゴリー';
+   print 'カテゴリー:';
    print $pro_category;
    print '<br>';
   }
