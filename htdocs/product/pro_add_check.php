@@ -8,6 +8,7 @@
 <div id="container">
   <?php include('../parts/header.php'); ?> <!-- include関数でパーツの分割化 -->
 
+  <div class="pro_add_check">
   <?php
 
   $pro_name=$_POST['pro_name'];
@@ -24,31 +25,31 @@
   }
   else
   {
-   print '商品名:';
-   print $pro_name;
-   print '<br>';
+    print '商品名:';
+    print $pro_name;
+    print '<br> <br>';
   }
 
   if(preg_match("/^[0-9]+$/", $pro_price)==0)
   {
-   print '価格を正しく入力してください <br>';
+    print '価格を正しく入力してください <br>';
   }
   else
   {
-   print '価格:';
-   print $pro_price;
-   print '<br>';
+    print '価格:';
+    print $pro_price;
+    print '<br> <br>';
   }
 
   if($pro_category== 'カテゴリー選択')
   {
-   print 'カテゴリーを選択してください <br>';
+    print 'カテゴリーを選択してください <br>';
   }
   else
   {
-   print 'カテゴリー:';
-   print $pro_category;
-   print '<br>';
+    print 'カテゴリー:';
+    print $pro_category;
+    print '<br> <br>';
   }
 
   if($pro_name==''||$pro_price==''||$pro_category=='')
@@ -59,20 +60,20 @@
   }
   else
   {
-
-      print '上記の商品を出品します。 <br>';
-      print '<form method="post" action="pro_add_done.php">';
-      print '<input type="hidden" name="pro_name" value="'.$pro_name.'">';
-      print '<input type="hidden" name="pro_price" value="'.$pro_price.'">';
-      print '<input type="hidden" name="pro_name" value="'.$pro_category.'">';
-      print '<br>';
-      print '<input type="button" onclick="history.back()" value="戻る">';
-      print '<input type="submit" value="OK">';
-      print '</form>';
+    print '上記の商品を出品します。 <br>';
+    print '<form method="post" action="pro_add_done.php">';
+    print '<input type="hidden" name="pro_name" value="'.$pro_name.'">';
+    print '<input type="hidden" name="pro_price" value="'.$pro_price.'">';
+    print '<input type="hidden" name="pro_category" value="'.$pro_category.'">';
+    print '<br>';
+    print '<input type="button" onclick="history.back()" value="戻る">';
+    print '<input type="submit" value="OK">';
+    print '</form>';
   }
   ?>
-  <?php include('../parts/footer.php'); ?>
+  </div>
 
+  <?php include('../parts/footer.php'); ?>
 </div>
 </body>
 </html>
