@@ -14,6 +14,7 @@
   $pro_name=$_POST['pro_name'];
   $pro_price=$_POST['pro_price'];
   $pro_category=$_POST['pro_category'];
+  $pro_phot=$_FILES['pro_phot'];
 
   $pro_name=htmlspecialchars($pro_name,ENT_QUOTES,'UTF-8');
   $pro_price=htmlspecialchars($pro_price,ENT_QUOTES,'UTF-8');
@@ -52,11 +53,25 @@
     print '<br> <br>';
   }
 
-  if($pro_name==''||$pro_price==''||$pro_category=='')
+  if($pro_name==''||$pro_price==''||$pro_category==''||$pro_phot['size']>1000000)
   {
     print '<form>';
     print '<input type="button" onclick="history.back()" value="戻る">';
     print '</form>';
+  }
+
+    if($pro_phot['size']>0)
+  {
+      if($pro_phot['size']>1000000)
+      {
+        print '画像が大き過ぎます';
+      }
+      else
+      {
+        move_uploaded_file($pro_phot['tmp_name'],'./phot/'.$pro_phot['name']);
+        print '<img src="./phot/'.$pro_phot['name'].'">';
+        print '<br>';
+      }
   }
   else
   {
@@ -65,6 +80,7 @@
     print '<input type="hidden" name="pro_name" value="'.$pro_name.'">';
     print '<input type="hidden" name="pro_price" value="'.$pro_price.'">';
     print '<input type="hidden" name="pro_category" value="'.$pro_category.'">';
+    print '<input type="hidden" name="phot_name" value="'.$pro_phot.'">';
     print '<br>';
     print '<input type="button" onclick="history.back()" value="戻る">';
     print '<input type="submit" value="OK">';

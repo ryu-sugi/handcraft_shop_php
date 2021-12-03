@@ -10,7 +10,7 @@
   
   <div class="pro_add">
   <br> 出品情報追加 <br>
-    <form method="post" action="pro_add_check.php" >
+    <form method="post" action="pro_add_check.php" enctype="multipart/form-data">
       商品名を入力してください <br>
       <input type="text" name="pro_name" style="width: 200px;"> <br> <br>
       価格を入力してください <br>
@@ -24,6 +24,8 @@
         <option value='イラスト・絵画' class="item4">イラスト・絵画</option>
         <option value='その他' class="item5">その他</option>
       </select> <br> <br>
+      画像を選択してください。<br> <br>
+      <input type="file" name="pro_phot" style="width: 200px"> <br> <br>
       <input type="button" onclick="history.back" value="戻る">
       <input type="submit" value="OK">
     </form>
