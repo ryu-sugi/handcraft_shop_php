@@ -38,6 +38,10 @@ img {
 
 }
 
+.add_item {
+padding: 20px;
+}
+
 .search {
  padding-top: 20px;
 }
@@ -165,4 +169,21 @@ li {
 .overlay a {
  color: white;
  text-decoration: none;
+}
+
+
+
+/* pro_add.php */
+
+.pro_add {
+  text-align: center;
+  margin-top: 150px;
+}
+
+/* pro_add_check.php */
+
+.pro_add_check {
+  text-align: center;
+  margin-top: 150px;
+
 }
