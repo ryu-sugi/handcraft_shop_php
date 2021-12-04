@@ -69,7 +69,7 @@
       else
       {
         move_uploaded_file($pro_phot['tmp_name'],'./phot/'.$pro_phot['name']);
-        print '<img src="./phot/'.$pro_phot['name'].'">';
+      print '<img src="./phot/'.$pro_phot['name'].'">';
         print '<br>';
       }
   }
