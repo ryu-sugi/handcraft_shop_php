@@ -22,7 +22,7 @@
 
       $pass = md5($staff_pass);
 
-      $dsn = 'mysql:dbname=shop;host=172.20.0.3;port=3306;charset=utf8';
+      $dsn = 'mysql:dbname=shop;host=172.20.0.2;port=3306;charset=utf8';
       $user = 'root';
       $password = 'password';
       $dbh = new PDO($dsn, $user, $password);
@@ -46,7 +46,7 @@
         exit();
       }
     } catch (Exception $e) {
-      print 'ただいま障害により大変ご迷惑をお掛けしております。';
+      print $e;
       exit();
     }
 
