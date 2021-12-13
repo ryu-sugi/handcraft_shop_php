@@ -5,7 +5,8 @@
  <div class="navbar">
  <a href="product/pro_add.php" class="add_item">出品</a>
    <a href="item.php" class="search">アイテムを探す</a>
-   <a href="login.php" class="login">ログイン</a>
+   <a href="" class="login">会員登録</a>
+   <a href="login/login.php" class="login">ログイン</a>
    <a href="cart.php" class="cart">カート</a>
  </div>
  <div class="sp-menu">
