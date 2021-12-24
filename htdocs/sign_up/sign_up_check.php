@@ -55,7 +55,9 @@
       print '<form>';
       print '<input type="button" onclick="history.back()" value="戻る">';
       print '</form>';
-    } else {
+    } 
+    else
+    {
       $sign_up_pass = md5($sign_up_pass);
       print '<form method="post" action="sign_up_done.php">';
       print '<input type="hidden" name="name" value="' . $sign_up_name . '">';
