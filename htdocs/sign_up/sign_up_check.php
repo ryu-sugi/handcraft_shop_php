@@ -20,8 +20,8 @@
 
     $sign_up_name = htmlspecialchars($sign_up_name, ENT_QUOTES, 'UTF-8');
     $sign_up_address = htmlspecialchars($sign_up_address, ENT_QUOTES, 'UTF-8');
-    $sign_up_pass = htmlspecialchars($sign_up_name, ENT_QUOTES, 'UTF-8');
-    $sign_up_pass2 = htmlspecialchars($sign_up_name, ENT_QUOTES, 'UTF-8');
+    $sign_up_pass = htmlspecialchars($sign_up_pass, ENT_QUOTES, 'UTF-8');
+    $sign_up_pass2 = htmlspecialchars($sign_up_pass2, ENT_QUOTES, 'UTF-8');
 
     if ($sign_up_name == '') {
       print 'お名前が入力されていません';
@@ -51,7 +51,7 @@
       print 'パスワードが一致しません';
     }
 
-    if ($sign_up_pass2 == '' || $sign_up_pass == '' || $sign_up_pass != $sign_up_pass2) {
+    if ($sign_up_name == '' || $sign_up_pass == '' || $sign_up_pass != $sign_up_pass2) {
       print '<form>';
       print '<input type="button" onclick="history.back()" value="戻る">';
       print '</form>';

@@ -14,15 +14,15 @@
 
     try {
 
-      $address = $_POST['code'];
-      $pass = $_POST['pass'];
+      $sign_up_address = $_POST['address'];
+      $sign_up_pass = $_POST['pass'];
 
-      $address = htmlspecialchars($address, ENT_QUOTES, 'UTF-8');
-      $pass = htmlspecialchars($pass, ENT_QUOTES, 'UTF-8');
+      $sign_up_address = htmlspecialchars($sign_up_address, ENT_QUOTES, 'UTF-8');
+      $sign_up_pass = htmlspecialchars($sign_up_pass, ENT_QUOTES, 'UTF-8');
 
-      $pass = md5($staff_pass);
+      $pass = md5($sign_up_pass);
 
-      $dsn = 'mysql:dbname=shop;host=172.20.0.2;port=3306;charset=utf8';
+      $dsn = 'mysql:dbname=shop;host=172.20.0.2;charset=utf8';
       $user = 'root';
       $password = 'password';
       $dbh = new PDO($dsn, $user, $password);
@@ -30,8 +30,8 @@
 
       $sql = 'SELECT name FROM mst_sign_up WHERE address=? AND pass=?';
       $stmt = $dbh->prepare($sql);
-      $data[] = $address;
-      $data[] = $pass;
+      $data[] = $sign_up_address;
+      $data[] = $sign_up_pass;
       $stmt->execute($data);
 
       $dbh = null;
@@ -41,7 +41,9 @@
       if ($rec == false) {
         print 'メールアドレスかパスワードが間違っています。 <br>';
         print '<a href="login.php">戻る</a>';
-      } else {
+      } 
+      else
+      {
         header('Location: index.php');
         exit();
       }
